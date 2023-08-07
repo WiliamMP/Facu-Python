@@ -70,7 +70,7 @@ dicionario3 = dict()
 # array NumPy
 # usado para inteligência artificial
 
-import numpy
+# import numpy
 
 matriz_1_1 = numpy.array([1,2,3]) # cria matriz 1 linha por 1 coluna
 matriz_2_2 = numpy.array([1,2], [3,4])
@@ -97,6 +97,39 @@ print(resultado)
 
 # ENTENDA complexdidade
 # quando com a mesma entrada usa menos recursos computacionais pra uma mesma saida
+
+# Busca binária, acha um valor dividindo em dois e procurando na outra metade
+# Busca menos complexa, ou com menos gastos computacionais
+
+def executar_busca_binaria(lista, valor):
+    minimo = 0
+    maximo = len(lista) - 1
+
+    while minimo <= maximo:
+        # Encontra o elemento que divide a lista ao meio
+        meio = (minimo + maximo) // 2
+
+        # Verifica se o valor procurado está a esquerda ou direita do valo central
+        if valor < lista[meio]:
+            maximo = meio -1
+        elif valor > lista[meio]:
+            minimo = meio + 1
+        else:
+            return True # se o valor for encontrado para aq 
+    
+    return False # se chegar ate aqui o valor n existe
+
+# Algoritmos de ordenação
+# estudar alguns algoritmos de ordenação, existe um site para estudar esse tipo de ordenação
+# Existem algoritmos mais rápidos que outros
+# existem algoritmos build-in feitos pelo próprio python e já em sintaxe
+
+
+
+# Feito com VS Code
+
+
+
 
 
 

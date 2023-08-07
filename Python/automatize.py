@@ -3,6 +3,8 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import time
+# Outra atividade de reforço feito por mim mesmo, para preencher formulario web automáticamente
+# Usando o framework externo da selenium, favor utilizar conda para fazer a instalação adequanda do mesmo
 # Configurações do chromedriver para poder manipular o chrome em ambiente de experimental 
 service = Service(executable_path='./chromedriver.exe')
 

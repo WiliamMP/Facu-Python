@@ -1,5 +1,7 @@
 import random
 
+# Feito de reforço por mim mesmo
+
 print('Eu escolhi minha jogada, escolha a sua humano imbecil')
 
 print('Menu de opções: \n')
