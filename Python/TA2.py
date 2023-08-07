@@ -70,14 +70,14 @@ dicionario3 = dict()
 # array NumPy
 # usado para inteligência artificial
 
-import numpy
+# import numpy
 
-matriz_1_1 = numpy.array([1,2,3]) # cria matriz 1 linha por 1 coluna
-matriz_2_2 = numpy.array([1,2], [3,4])
+# matriz_1_1 = numpy.array([1,2,3]) # cria matriz 1 linha por 1 coluna
+# matriz_2_2 = numpy.array([1,2], [3,4])
 
-print(type(matriz_1_1))
-print('\n matriz_1_1 = ', matriz_1_1)
-print('\n matriz_2_2 = ', matriz_2_2)
+# print(type(matriz_1_1))
+# print('\n matriz_1_1 = ', matriz_1_1)
+# print('\n matriz_2_2 = ', matriz_2_2)
 
 # ----------------------------------------
 #           ALGORITMOS DE BUSCA
@@ -124,7 +124,51 @@ def executar_busca_binaria(lista, valor):
 # Existem algoritmos mais rápidos que outros
 # existem algoritmos build-in feitos pelo próprio python e já em sintaxe
 
+# Funções build-in Python
+# Sorted() & Sort()
 
+lista = [10, 4, 1 , 15, -3]
+
+lista_ordenada1 = sorted(lista)
+lista_ordenada2 = lista.sort()
+
+print('Lista = ', lista, '\n')
+
+print('lista_ordenada1 = ', lista_ordenada1)
+print('lista_ordenada2 = ', lista_ordenada2)
+
+print('lista = ', lista)
+
+# Ficar de olho porque isso aqui geralmente cai em provas ou trabalhos
+
+lista = [7,4]
+
+if lista[0] > lista[1]:
+    aux = lista[1]
+    lista[1] = lista[0]
+    lista[0] = aux # auxiliar para armazenar valores 
+
+print(lista)
+
+lista = [5, -1]
+
+# Selection Sort (Ordenação por seleção)
+
+lista = [10, 9, 5 ,8 ,11 ,3]
+
+def executar_selection_sort(lista):
+    tamanhoLista = len(lista)
+
+    for i in range(0, tamanhoLista):
+        indexMenor = i
+
+        for j in range(i+1, tamanhoLista):
+            if lista[j] < lista[indexMenor]:
+                indexMenor = j
+            lista[i], lista[indexMenor] = lista[indexMenor], lista[i]
+    return lista
+    
+print(executar_selection_sort(lista))
 
 # Feito com VS Code
 
