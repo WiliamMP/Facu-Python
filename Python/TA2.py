@@ -170,6 +170,29 @@ def executar_selection_sort(lista):
     
 print(executar_selection_sort(lista))
 
+
+# Bubble Sort (Ordenação por "Bolha")
+
+def executar_bubble_sort(lista):
+    n = len(lista)
+
+    for i in range(n-1):
+        for j in range(n-1):
+            if lista[j] > lista[j + 1]:
+                lista[j], lista[j + 1] = lista[j + 1], lista[j]
+    return lista
+
+print(executar_bubble_sort(lista))
+
+# Merge sort (ordenação por junção)
+# Famoso Dividir para conquistar
+# provavelmente vai usar o numpy
+
+
+
+
+
+
 # Feito com VS Code
 
 
