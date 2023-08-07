@@ -70,7 +70,7 @@ dicionario3 = dict()
 # array NumPy
 # usado para inteligência artificial
 
-# import numpy
+import numpy
 
 matriz_1_1 = numpy.array([1,2,3]) # cria matriz 1 linha por 1 coluna
 matriz_2_2 = numpy.array([1,2], [3,4])
