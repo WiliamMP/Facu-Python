@@ -58,6 +58,12 @@ f1 = Funcionario()
 f1.nome = "Funcionário A"
 print(f1.nome)
 
+# Métodos mágicos
+
+print(dir(Pessoa()))
+
+# Observe na saída desse trecho de código os Métodos mágicos
+
 
                 
         
