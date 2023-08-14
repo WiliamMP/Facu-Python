@@ -51,3 +51,14 @@ lista_geral = [1, 6, 9, 0, -5, 20, 99, 10, 44, 33, 22, 18, 15, 17, 2]
 print(executar_selection_sort(lista_geral))
         
 
+
+
+
+''' 
+    REFERÊNCIAS
+
+    joaoarthurbm.github.io/eda/posts/selection-sort/
+    www.freecodecamp.org/portuguese/news/algoritmos-de-ordenacao-explicados-com-exemplos-em-python-java-e-c/
+    Códigos fontes da professora Elisa Antolli
+
+'''
