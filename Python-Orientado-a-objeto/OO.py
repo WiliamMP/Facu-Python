@@ -64,6 +64,39 @@ print(dir(Pessoa()))
 
 # Observe na saída desse trecho de código os Métodos mágicos
 
+#################################################
+
+import sqlite3
+
+ddl_create = """
+CREATE TABLE fornecedor (
+    id_fornecedor INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    nome_fornecedor TEXT NOT NULL,
+    cnpj VARCHAR(18) NOT NULL,
+    cidade TEXT,
+    estado VARCHAR(2) NOT NULL,
+    cep VARCHAR(9) NOT NULL,
+    data_cadastro DATE NOT NULL
+
+);
+ """
+
+conn = sqlite3.connect('aulaDB.db')
+cursor = conn.cursor()
+cursor.execute(ddl_create)
+print(type(cursor))
+print("tabela criada com sucesso!")
+
+# IH ENTREI NO CRUD
+# SQLITE USA READ NO LUGAR DO SELECT
+
+
+
+
+
+
+
+
 
                 
         
