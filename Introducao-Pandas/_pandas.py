@@ -24,8 +24,6 @@ print('Tipo de dados = ', serie_dados.dtypes) # Retona os tipos de dados, se for
 print('Os valore são únicos? ', serie_dados.is_unique) # Verifica se os valores unicos(sem duplicações)
 print('Existem valores nulos? ', serie_dados.hasnans) # Retorna se possui valores nulos
 print('Quanto valores existem? ', serie_dados.count()) # Retorna quantos valores exitem(exclui os nulos)
-
-
 print('Qual o menor valor?', serie_dados.min()) # Extrai o menor valor da series( nesse caso precia ser do mesmo tipo)
 print('Qual o maior valor?', serie_dados.max()) # Extrai o valor máximo, com a mesma condição do minimo 
 print('Qual a média aritmética?', serie_dados.mean()) # Extrai a média aritmética de uma series numérica
@@ -34,16 +32,17 @@ print('Qual a mediana?', serie_dados.median()) # Extrai a mediana de uma das ser
 print('\n Resumo: \n', serie_dados.describe()) # Exibe um resumo sobre o dados da series
 
 
-teste = {"a":"Wiliam","b":"Teste","c":"WWASSD"}
+teste = ["Wiliam","Teste","WWASSD"] # lista
 
 pd.DataFrame(lista_nomes, columns=['nome'])
 
 print(pd.DataFrame(lista_nomes, columns=['nome']))
 
-dados_alunos = {'Nome': ['Wiliam', 'Carlos', 'Antonio'],
+dados_alunos = {
+                'Nome': ['Wiliam', 'Carlos', 'Antonio'],
                 'Idade': [19, 27, 22], 
                 'Disciplina': ['Engenheiro', 'Matemática', 'Inglês']
-               }
+               } # dicionario
 
 df = pd.DataFrame.from_dict(dados_alunos)
 print(df)
